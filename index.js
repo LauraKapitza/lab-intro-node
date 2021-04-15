@@ -26,7 +26,12 @@ class SortedList {
     return this.items[i];
   }
 
-  min() {}
+  min() {
+    if (this.length === 0) {
+      throw new Error('EmptySortedList');
+    }
+    return this.items[0];
+  }
 
   sum() {}
 
