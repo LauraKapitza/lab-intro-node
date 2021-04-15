@@ -18,7 +18,13 @@ class SortedList {
     return value;
   }
 
-  max() {}
+  max() {
+    if (this.length === 0) {
+      throw new Error('EmptySortedList');
+    }
+    let i = this.length-1;
+    return this.items[i];
+  }
 
   min() {}
 
